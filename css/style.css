@@ -1,0 +1,70 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+
+
+header, footer{
+    background: blue;
+    display: flex;
+    /* height: 4rem; */
+}   
+
+
+.logo{
+     display: flex;
+     height: 14rem;
+     object-fit: cover;
+     /* flex-grow: none; */
+     /* flex-shrink: none; */
+     /* transform: 10; */
+     /* position: absolute; */
+     /* top: 0%; */
+     /* left: 0%*; */
+     position: absolute;
+     left: 0;
+}
+
+
+body{
+    background: white;
+    min-height: 100vh;
+    font-size: 2rem;
+}
+
+.grafiek{
+size: 14 rem    ;
+}
+
+canvas{
+    height:13 rem;
+    width:13 rem;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.header__wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+article{
+    /* align-items: center; */
+    /* top: 50%; */
+    background: green 
+}
+

@@ -5,22 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Casa Verde</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js dashboard/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>    
 </head>
-<body>
-    <header>
-        <h1>
-            Mert, Luc en Fardin
-            Casa Verde
-            Make your home great again!
-            M3BO
-        </h1>
+<body>  
+            <header class="header">
+            <img class="logo" src="Logo/casa verde 1.png" alt="Casa verde Logo">
+        <div class="header__wrapper">
+            <h1 class="header__title">
+                Casa Verde  
+            </h1>
+            <p class="header__slogan">
+                Make your home great again! M3BO
+            </p>
+        </div>
     </header>
-    <article>
+        <div>
+            <canvas id="myChart"></canvas>
+          </div>
 
+    <article>
+        <div class="grafiek"> 
+        <script>
+            const ctx = document.getElementById('myChart');
+           
+       new Chart(ctx, {
+         type: 'bar',
+         data: {
+           labels: ['licht','verwarminig','óverige stroom'],
+           datasets: [{
+             label: 'Energie verbruik',
+             data: [12, 19, 3, 5, 2, 3],
+             borderWidth: 1
+           }]
+         },
+         options: {
+           scales: 1,{
+             y: {
+               beginAtZero: true
+             }
+           }
+         }
+       });
+       </script>
+    </div>
     </article>
+<p>yhjkl  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus atque fuga veniam ad, facilis maiores natus amet provident temporibus beatae minima. Itaque praesentium asperiores nam consectetur iusto perferendis atque <tempora class="lorem">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam consequatur illum inventore quae sit quasi ab quas architecto, maiores tenetur, excepturi a voluptatem cupiditate facilis sequi aliquid, fugit minus possimus!loremlorem
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, consequuntur. Cupiditate aut nostrum esse tempora cum vel quam iure neque ullam. Quidem atque sit, harum et doloribus aliquam incidunt recusandae!
+</p>
+</body>
     <footer>
         <p>&copy; 2024 Casa Verde. Alle rechten voorbehouden.</p>
         <p>Casa Verde is een innovatief huis ontworpen door Luc Bruggeman, Fardin Mohammed, Mert Duru.</p>
     </footer>
-</body>
 </html>
