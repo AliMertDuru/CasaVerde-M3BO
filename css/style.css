@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 *{
     padding: 0;
@@ -384,3 +385,159 @@ footer{
 @media screen {
     
 }
+=======
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+html{
+    font-size: 62.5%;
+    color: white;
+}
+
+
+header{
+    background: rgb(0 50 161 / var(--tw-bg-opacity, 1));
+    display: flex;
+    
+    
+    /* height: 4rem; */
+}   
+
+
+.logo{
+     display: flex;
+     height: 14rem;
+     object-fit: cover;
+     /* flex-grow: none; */
+     /* flex-shrink: none; */
+     /* transform: 10; */
+     /* position: absolute; */
+     /* top: 0%; */
+     /* left: 0%*; */
+     position: absolute;
+     left: 0;
+}
+
+
+body{
+    background: white;
+    min-height: 100vh;
+    font-size: 2rem;
+}
+
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.header__wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.myChart{
+    height: 4%;
+    width: 55rem;
+    display: flex;
+    border-radius: 1.5rem;
+    border: 0.02rem solid black;
+    padding: 20px;
+    margin: 10px;
+    background-color: white;
+}
+
+.temperatuur {
+    width: 55rem;
+    background: white;
+    color: rgb(0, 50, 161);
+    border: 0.02rem solid #000;
+    border-radius: 1.5rem;
+    overflow: hidden; 
+    font-family: sans-serif;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.mp1 {
+    background-color: rgb(0, 50, 161);
+    color: white;
+    padding: 1rem;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+}
+
+.mp1 p {
+    margin: 0;
+    font-weight: bold;
+}
+
+.update-info {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.content {
+    padding: 1rem;
+    display: flex;
+    gap: 10rem;
+}
+
+.text2{
+    display: flex;
+    gap: 19rem;
+}
+
+.temperatuur2 {
+    width: 55rem;
+    background: white;
+    color: rgb(0, 50, 161);
+    border: 0.02rem solid #000;
+    border-radius: 1.5rem;
+    overflow: hidden; 
+    font-family: sans-serif;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.mp12 {
+    background-color: rgb(0, 50, 161);
+    color: white;
+    padding: 1rem;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+}
+
+.mp12 p {
+    margin: 0;
+    font-weight: bold;
+}
+
+.update-info2 {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.content2 {
+    padding: 1rem;
+    display: flex;
+    gap: 10rem;
+}
+
+
+
+
+>>>>>>> ea1d2dc4d440107de19fa1be8accf45fc62407a5
