@@ -1,0 +1,15 @@
+{
+    "ldr": 932,
+    "dht11": {
+        "temperature": 11.3,
+        "humidity": 161.8,
+        "heatIndex": 12.7
+    },
+    "lights": {
+        "LED1": true,
+        "LED2": true,
+        "LED3": false
+        
+    }
+}
+

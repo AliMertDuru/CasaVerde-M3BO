@@ -22,6 +22,29 @@ header{
     /* height: 4rem; */
 }   
 
+.button{
+    position: relative;
+    left: 22rem;
+    color: #ffffff;
+    background: #5a5a5a;
+    border-radius:0.5rem;
+    box-shadow: #ffa20d;
+}
+
+body.dark-mode {
+    background-color: #000000;
+    color: #e0e0e0;
+  }
+  
+  body.dark-mode .dark-mode-button {
+    background-color: #e0e0e0;
+    color: #121212;
+  }
+  
+  body.dark-mode .dark-mode-button:hover {
+    background-color: #a32828;
+  }
+
 
 .logo{
      display: flex;
@@ -42,6 +65,9 @@ body{
     background: white;
     min-height: 100vh;
     font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 
@@ -60,20 +86,15 @@ body{
 }
 
 
-.myChart{
-    height: 4%;
-    width: 55rem;
-    display: flex;
-    border-radius: 1.5rem;
-    border: 0.02rem solid black;
-    padding: 20px;
-    margin: 10px;
-    background-color: white;
-}
+
 
 .holder{
     display: flex;
-    display: block;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-grow: none;
+    gap: 2rem;
+    padding: 4rem;
 }
 
 .temperatuur {
@@ -85,12 +106,12 @@ body{
     overflow: hidden; 
     font-family: sans-serif;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    float: right;
+    flex-shrink: none;
+    flex-grow: none;
 }
 
 .img-wolk{
-    width: 10%;
-    float: right;
+    width:10%;
 }
 
 .mp1 {
@@ -123,6 +144,32 @@ body{
     display: flex;
     gap: 19rem;
 }
+
+.myChart{
+    width: 47rem;
+    height: 25rem;
+    border-radius: 1.5rem;
+    border: 0.02rem solid black;
+    background-color: white;
+    box-shadow: 0px 4px 6px 0 rgba(0, 0, 0, 0.1);
+}
+
+.text3{
+    background:  rgb(0, 50, 161);
+    color:white;
+    border: 0.02rem solid #000;
+    overflow: hidden; 
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    height: 4rem;
+    justify-items: center;
+    align-items: baseline;
+}
+
+div > .text3{
+    border-radius: 1.5rem 1.5rem 0 0;
+}
+
 .controlpaneel{
     width: 47rem;
     background: white;
@@ -132,7 +179,8 @@ body{
     overflow: hidden; 
     font-family: sans-serif;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    float: right;
+    flex-shrink: none;
+    flex-grow: none;
 }
 
 .mp3{
@@ -148,6 +196,28 @@ body{
     font-weight: bold;
 }
 
+.licht-aan{
+    background: #DDA853;
+    color: black;
+    border: 0.09rem solid black;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    width: 3rem;
+    height: 3rem;
+}
+
+.licht-aan:hover{
+        transform: scale(1.1);
+}
+
+.licht-uit{
+    background: #DDA853;
+    color: black;
+    border: 0.09rem solid black;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
 .con1{
     display: flex;
     align-items: center;
@@ -159,6 +229,144 @@ body{
     padding: 1rem;
     display: flex;
     gap: 10rem;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.lamp{
+    width: 6rem;
+    height: 6rem;
+}
+
+.holder2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-grow: none;
+    padding: 2Xrem;
+    gap: 1rem;
+}
+
+.chart1{
+    flex-grow: none;
+    flex-shrink: none;
+}
+
+.weersverwachting{
+    width: 50rem;
+    height: 20rem;
+    background: white;
+    color: rgb(0, 50, 161);
+    border: 0.02rem solid #000;
+    border-radius: 1.5rem;
+    overflow: hidden; 
+    font-family: sans-serif;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    flex-shrink: none;
+    flex-grow: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.mp4{
+    background-color: rgb(0, 50, 161);
+    color: white;
+    padding: 1rem;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+}
+
+.zon{
+    height: 10%;
+    width: 10%;
+}
+
+.zonImg{
+    height: 5rem;
+}
+
+.month{
+    font-size: 1.6rem;
+    color: rgb(129 129 149 / var(--tw-text-opacity, 1));
+    font-family: 'Courier New', Courier, monospace;
+    font-weight:500;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-manager{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-grow: none;
+}
+
+.weerDataVandaag{
+background: rgb(0, 50, 161);
+    border: 0.02rem solid #000;
+    color: white;
+    height: 16rem;
+    padding: 1rem;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    min-width: 10rem;
+    letter-spacing: 0rem;
+    justify-items: center;
+}
+
+.weerData{
+    background: white;
+    border: 0.02rem solid #000;
+    height: 16rem;
+    padding: 1rem;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    min-width: 10rem;
+    flex-direction: column;
+    justify-items: center;
+}
+
+.dag{
+    font-size:1.7rem;
+    font-weight: 700;
+}
+
+.dag1{
+    font-size:1.7rem;
+    font-weight: 700; 
+}
+
+.graden{
+    justify-content: center;
+}
+
+
+.mp5-text{
+    font-size: 1.5rem;
+    background-color: rgb(0, 50, 161);
+    color: white;
+    padding: 1rem;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+    border: 0.02rem solid #000;
+
+}
+.mp5{
+    background-color:white;
+    color: rgb(0, 50, 161);
+    padding: 1rem;
+    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+    font-size: 1.5rem;
+    border: 0.02rem solid #000;
+}
+
+.mp6{
+    background-color: rgb(0, 50, 161);
+    color: white;
+    padding: 1rem;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
 }
 
 
@@ -166,9 +374,6 @@ footer{
     width:100%;
     min-height: 100%;
     background: rgb(0 50 161 / var(--tw-bg-opacity, 1));
-    margin-left:8rem;
-    margin-right:4rem;
-    margin-bottom: 1rem;
     margin-top: 5rem;
     text-align:center;
 }
@@ -176,3 +381,6 @@ footer{
 
 
 
+@media screen {
+    
+}
